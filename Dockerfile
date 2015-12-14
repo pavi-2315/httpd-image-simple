@@ -9,4 +9,4 @@ RUN apt-get update && apt-get upgrade \
 COPY httpd-foreground /usr/local/bin/
 
 EXPOSE 80
-CMD ["httpd-foreground"]
+ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
