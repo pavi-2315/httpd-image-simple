@@ -5,7 +5,7 @@ RUN apt-get update && apt-get upgrade \
       && apt-get install -y --no-install-recommends \
            apache2 \
            curl \
-           ca-certicates
+           ca-certificates
 
 COPY httpd-foreground /usr/local/bin/
 
