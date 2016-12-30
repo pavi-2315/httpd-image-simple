@@ -1,7 +1,7 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.10
 MAINTAINER "Rene Gielen" <rgielen@apache.org>
 
-RUN apt-get update && apt-get upgrade \
+RUN apt-get update && apt-get upgrade -y \
       && apt-get install -y --no-install-recommends \
            apache2 \
            curl \
