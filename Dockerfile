@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER "Rene Gielen" <rgielen@apache.org>
 
 RUN apt-get update && apt-get upgrade -y \
-      && apt-get install -y --no-install-recommends \
+      && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
            apache2 \
            curl \
            ca-certificates \
