@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.04
 MAINTAINER "Rene Gielen" <rgielen@apache.org>
 
 RUN apt-get update && apt-get upgrade -y \
