@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
-MAINTAINER "Rene Gielen" <rgielen@apache.org>
+FROM rhel:9.5
+MAINTAINER 'pavithrarajan
 
 RUN apt-get update && apt-get upgrade -y \
       && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
