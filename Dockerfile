@@ -1,5 +1,5 @@
-FROM rhel:9.5
-MAINTAINER 'pavithrarajan
+FROM alpine:3.5
+MAINTAINER 'pavithrarajan'
 
 RUN apt-get update && apt-get upgrade -y \
       && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
