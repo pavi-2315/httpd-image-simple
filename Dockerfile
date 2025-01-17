@@ -1,6 +1,4 @@
 FROM ubuntu:18.04
-MAINTAINER 'pavithrarajan' <pavithrarajan754@gmail.com>
-
 RUN apt-get update && apt-get upgrade -y \
       && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
            apache2 \
